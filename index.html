@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio | Muhammad Fahri Ramadhan</title>
+
+    <!-- Box Icons Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Rii_Works</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+
+        <!-- Dark Mode -->
+        <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+            <input onclick="DarkMode()" type="checkbox" class="input">
+            <span class="slider"></span>
+        </label>    
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Selamat datang di Website Portfolio</h3>
+            <h1>Muhammad Fahri Ramadhan</h1>
+            <h3>Siswa <span>SMK Taruna Bhakti Depok</span></h3>
+            <div class="social-media">
+                <a href="https://github.com/FhriiPhri" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/6281210672183" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/mfr_rii" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.tiktok.com/@mfr_rii" target="_blank"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/main.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Tentang <span>Saya</span></h2>
+            <h3>Muhammad Fahri Ramadhan</h3>
+            <p>Saya merupakan siswa SMK Taruna Bhakti kelas X</p>
+            <a href="about.html" target="_blank" class="btn" id="more">Selengkapnya</a>
+            <a href="CV_Muhammad Fahri Ramadhan.pdf" target="_blank" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="skill" id="skill">
+        <h2 class="heading">Skill <span>Saya</span></h2>
+
+        <div class="skill-container">
+            <div class="skill-box">
+                <i class='bx bxl-html5' ></i>
+                <h3>HTML5</h3>
+            </div>
+            
+            <div class="skill-box">
+                <i class='bx bxl-css3' ></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-box">
+                <i class='bx bxl-java'></i>
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill-box">
+                <i class='bx bxl-php'></i>
+                <h3>PHP</h3>
+            </div>
+
+            <div class="skill-box">
+                <i class='bx bxl-adobe' ></i>
+                <h3>Adobe Illustrator</h3>
+            </div>
+
+            <div class="skill-box">
+                <i class='bx bxl-visual-studio'></i>
+                <h3>Visual Studio Code</h3>
+            </div>
+
+            <div class="skill-box">
+                <i class='bx bx-video'></i>
+                <h3>Editing Video</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section
+    <section class="soon" id="soon">
+    <h2 class="heading">Project <span>Saya</span></h2>
+    <h1 class="soon">Akan <span>Hadir</span></h1>
+    </section> -->
+
+    <!-- Project -->
+    <section class="project" id="project">
+        <h2 class="heading">Project <span>Saya</span></h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <img src="assets/project1.png" alt="">
+                <div class="project-layer">
+                    <h4>GP Info</h4>
+                    <p>Ini adalah project mockup Figma untuk aplikasi GP Info.</p>
+                    <a href="https://www.figma.com/file/jDojDvzdT0x1r6CXS6ylIH/GP-Info?type=design&node-id=0%3A1&mode=design&t=17vejfiPJA0nJft7-1" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="assets/project2.png" alt="">
+                <div class="project-layer">
+                    <h4>StarCanteen</h4>
+                    <p>Ini adalah project mockup Figma untuk web StarCanteen.</p>
+                    <a href="https://www.figma.com/file/IaEZrNvrw0e7rnvXGYlNAx/StarCanteen?type=design&node-id=0%3A1&mode=design&t=tEt3R7TJ7G4hCVTL-1" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Kontak <span>Saya</span></h2>
+
+        <form>
+            <div class="input-box">
+                <input id="name" type="text" placeholder="Nama Lengkap">
+                <input id="email" type="email" placeholder="Alamat Email">
+                <input id="phone" type="number" placeholder="Nomor Telepon">
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Pesan"></textarea>
+            <input type="submit" onclick="WhatsApp()" value="Kirim Pesan" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 | by Muhammad Fahri Ramadhan</p>
+        </div>
+        
+        <div class="social-media-footer">
+            <a href="https://github.com/FhriiPhri" target="_blank"><i class='bx bxl-github'></i>Github</a>
+            <a href="https://wa.me/6281210672183" target="_blank"><i class='bx bxl-whatsapp'></i>WhatsApp</a>
+            <a href="https://www.instagram.com/mfr_rii" target="_blank"><i class='bx bxl-instagram-alt'></i>Instagram</a>
+            <a href="https://www.tiktok.com/@mfr_rii" target="_blank"><i class='bx bxl-tiktok'></i>TikTok</a>
+        </div>
+
+        <div class="footer-iconTop">
+            <a id="myBtn" href="#home"><i class='bx bx-arrow-to-top'></i></a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
