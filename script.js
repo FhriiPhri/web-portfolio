@@ -17,3 +17,27 @@ function DarkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+
+// Add these animation classes to your CSS
+document.head.insertAdjacentHTML('beforeend', `
+<style>
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+</style>
+`);
